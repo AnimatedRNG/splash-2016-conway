@@ -55,7 +55,7 @@ class LifeWindow(pyglet.window.Window):
         self.__grid_width__ = int(screen_res[0] * WIDTH_RATIO)
         self.__grid_height__ = int(screen_res[1] * HEIGHT_RATIO)
         self.__paused__ = False
-        self.__game_paused__ = False
+        self.__game_paused__ = True
         self.__render_cells__ = set()
         
         self.theme = Theme({
@@ -126,6 +126,7 @@ class LifeWindow(pyglet.window.Window):
             self.on_logic()
 
         self.play = HighlightedButton('Pause', on_press = on_press_play)
+        self.play._is_pressed = True
         self.reset = HighlightedButton('Reset', on_press = on_press_reset)
         self.step = HighlightedButton('Step', on_press = on_press_step)
         self.generation = Label(str(self.__generation_count__))
