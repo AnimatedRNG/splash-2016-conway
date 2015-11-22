@@ -1,3 +1,5 @@
+#!/bin/env python3
+
 import pyglet
 from pyglet import pyglet_gui
 from pyglet.pyglet_gui.theme.theme import Theme
