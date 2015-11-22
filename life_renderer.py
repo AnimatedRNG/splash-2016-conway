@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/python3
 
 import pyglet
 from pyglet import pyglet_gui
@@ -70,13 +70,13 @@ class LifeWindow(pyglet.window.Window):
                       "down": {
                           "highlight": {
                               "image": {
-                                  "source": "button-highlight.png",
+                                  "source": "button-highlight_2.png",
                                   "frame": [8, 6, 2, 2],
                                   "padding": [18, 18, 8, 6]
                               }
                           },
                           "image": {
-                              "source": "button-down.png",
+                              "source": "button-down_2.png",
                               "frame": [6, 6, 3, 3],
                               "padding": [12, 12, 4, 2]
                           },
@@ -85,13 +85,13 @@ class LifeWindow(pyglet.window.Window):
                       "up": {
                           "highlight": {
                               "image": {
-                                  "source": "button-highlight.png",
+                                  "source": "button-highlight_2.png",
                                   "frame": [8, 6, 2, 2],
                                   "padding": [18, 18, 8, 6]
                               }
                           },
                           "image": {
-                              "source": "button.png",
+                              "source": "button_2.png",
                               "frame": [6, 6, 3, 3],
                               "padding": [12, 12, 4, 2]
                           }
