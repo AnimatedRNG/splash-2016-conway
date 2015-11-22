@@ -107,7 +107,6 @@ class LifeWindow(pyglet.window.Window):
             self.setup(self)
 
         self.loop = loop
-        pyglet.clock.schedule_once(self.on_logic, SPEED)
 
         def on_press_play(is_pressed):
             self.__game_paused__ = not self.__game_paused__
@@ -118,8 +117,10 @@ class LifeWindow(pyglet.window.Window):
         def on_press_reset(is_pressed):
             pyglet.clock.schedule_once(self.__reset_button__, RESET_BUTTON_PAUSE, self.reset)
             self.clear_grid()
+            self.__generation_count__ = 0
             if self.setup != None:
                 self.setup(self)
+
 
         def on_press_step(is_pressed):
             pyglet.clock.schedule_once(self.__reset_button__, RESET_BUTTON_PAUSE, self.step)
