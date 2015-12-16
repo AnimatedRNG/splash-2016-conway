@@ -25,8 +25,8 @@ SPEED = 0.1
 
 
 VALUE_COLORS = {
-    #0: (0.129, 0.129, 0.129),
-    0: (0.62, 0.62, 0.62),
+    0: (0.129, 0.129, 0.129),
+    #0: (0.62, 0.62, 0.62),
     1: (0.957, 0.263, 0.212),
     2: (1, 0.922, 0.231),
     3: (0.012, 0.663, 0.957),
@@ -174,7 +174,7 @@ class LifeWindow(pyglet.window.Window):
             for cell in self.__render_cells__:
                 new_val = self.__render_cells__[cell] % len(VALUE_COLORS)
                 self.__draw_cell__(cell[0], cell[1], VALUE_COLORS[new_val])
-            #self.__draw_grid__((.12, 0.59, 0.95))
+            self.__draw_grid__((.12, 0.59, 0.95))
             self.__draw_toolbar__()
             self.__render_all__()
             self.batch.draw()

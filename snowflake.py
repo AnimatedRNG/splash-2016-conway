@@ -3,7 +3,7 @@
 from life_renderer import LifeWindow
 from random import randint
 
-ROWS, COLS = 80, 15
+ROWS, COLS = 100, 100
 cells = [[]]
 
 def printall():
