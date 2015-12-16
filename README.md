@@ -1,6 +1,9 @@
 C9753: Designing the Game of Life: Implementing Cellular Automata in Python 
 ===================
 
+![Snowflake automata](http://i.imgur.com/WzSytPy.png?1)
+[Source](http://psoup.math.wisc.edu/extras/hexca/hexca.html)
+
 Feel free to leave the class at any time if you don’t find it interesting. You can attend a walk-in activity in Lobby 13, or change your schedule in 4-163.
 
 This can be a slightly harder coding assignment than those offered at your high school. Don't feel frustrated if you don't get it at first. If you're stuck, just raise your hand, and I'll come over to help.
@@ -174,4 +177,3 @@ where `DIM_1` and `DIM_2` are the dimensions of your desired array.
 ### How do I make a set in python?
 
 Clever you. Take a look at [this](https://docs.python.org/3/tutorial/datastructures.html#sets).
-
