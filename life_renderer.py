@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/python3
 
 import math
 
@@ -86,13 +86,13 @@ class LifeWindow(pyglet.window.Window):
                       "down": {
                           "highlight": {
                               "image": {
-                                  "source": "button-highlight.png",
+                                  "source": "button-highlight_2.png",
                                   "frame": [8, 6, 2, 2],
                                   "padding": [18, 18, 8, 6]
                               }
                           },
                           "image": {
-                              "source": "button-down.png",
+                              "source": "button-down_2.png",
                               "frame": [6, 6, 3, 3],
                               "padding": [12, 12, 4, 2]
                           },
@@ -101,13 +101,13 @@ class LifeWindow(pyglet.window.Window):
                       "up": {
                           "highlight": {
                               "image": {
-                                  "source": "button-highlight.png",
+                                  "source": "button-highlight_2.png",
                                   "frame": [8, 6, 2, 2],
                                   "padding": [18, 18, 8, 6]
                               }
                           },
                           "image": {
-                              "source": "button.png",
+                              "source": "button_2.png",
                               "frame": [6, 6, 3, 3],
                               "padding": [12, 12, 4, 2]
                           }
@@ -123,7 +123,6 @@ class LifeWindow(pyglet.window.Window):
             self.setup(self)
 
         self.loop = loop
-        pyglet.clock.schedule_once(self.on_logic, SPEED)
 
         def on_press_play(is_pressed):
             self.__game_paused__ = not self.__game_paused__
@@ -137,6 +136,7 @@ class LifeWindow(pyglet.window.Window):
             self.__generation_count__ = 0
             if self.setup != None:
                 self.setup(self)
+
 
         def on_press_step(is_pressed):
             pyglet.clock.schedule_once(self.__reset_button__, RESET_BUTTON_PAUSE, self.step)
