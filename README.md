@@ -14,12 +14,12 @@ This can be a slightly harder coding assignment than those offered at your high 
 Installation
 -------------
 
- 1. Open up a terminal and execute the following command: `git clone https://github.com/AnimatedRNG/splash-2015-conway.git`
- 2. Execute `ls`. You should see a folder called `splash-2015-conway`. Execute the command `cd splash-2015-conway`.
+ 1. Open up a terminal and execute the following command: `git clone https://github.com/AnimatedRNG/splash-2016-conway.git`
+ 2. Execute `ls`. You should see a folder called `splash-2016-conway`. Execute the command `cd splash-2016-conway`
  3. In this directory are multiple files, including this very README. Execute `alias python=python3`
  4. Now if you execute `python implementation.py` you should see a grid and three buttons. If you don't see a grid and three buttons or if you see an ugly error instead, raise your hand and I'll come over to help you. Either close the window with the grid in it, or type the key combination `Ctrl+C` into the terminal to end the program.
- 5. I've been having some difficulties getting emacs and vi working on these machines; however, you can get a nice Python IDE up and running by executing `sudo apt-get install idle3`, typing in the espuser password (on the Google Slides screen), and pressing `y` to the `Do you want to continue?` prompt.
- 6. Execute `idle3 implementation.py` in the terminal. You can now run your code by pressing `F5`. Happy Hacking!
+ 5. I've been having some difficulties getting emacs and vi working on these machines; however, you can get a nice Python IDE installed clicking on the shortcut on the desktop named `idle`. Now click `Ctrl+O` and open the `splash-2016-conway` folder and then open `implementation.py`. If you can't find the folder, then just close IDLE, go back to the terminal you had and execute `idle3 implementation.py &`
+ 6. Now that IDLE is up, you can now run your code by pressing `F5`. Happy Hacking!
 
 
 Relevant Methods
@@ -128,7 +128,7 @@ Commonly asked Questions
 
 ### (Row, Column) vs (x, y)
 
-When I had to implement the Game of Life, I kept mixing up (Row, Column) with (x, y). So I decided to use the Pythonic convention of **Explicit over Implict** and encourage named arguments:
+When I had to implement the Game of Life, I kept mixing up (Row, Column) with (x, y). So I decided to use the Pythonic convention of **Explicit over Implicit** and encourage named arguments:
 
 ``` python
     lifewindow.create_cell(row = 0, col = 5)
@@ -177,3 +177,7 @@ where `DIM_1` and `DIM_2` are the dimensions of your desired array.
 ### How do I make a set in python?
 
 Clever you. Take a look at [this](https://docs.python.org/3/tutorial/datastructures.html#sets).
+
+### I'm stuck
+
+That's okay. If you don't know what to do, take a look at [this](hints/hint1.md)
